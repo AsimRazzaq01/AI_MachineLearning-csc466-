@@ -52,9 +52,9 @@ if __name__ == "__main__":
     
     knn = KNN(k=3)  # instantiate KNN with k=3
     knn.fit(x_train, y_train)  # train model
-    predictions = knn.predict([[3,9]])   #predict
-    print("Prediction [[3,9]]", predictions)
-    #predictions = knn.predict(x_test)
-    #print("Prediction: ", predictions)
+    #predictions = knn.predict([[3,9]])   #predict
+    #print("Prediction [[3,9]]", predictions)
+    predictions = knn.predict(x_test)
+    print("Prediction: ", predictions)
     #predictions = knn.predict(x_test)
     #print(x_test,predictions)
